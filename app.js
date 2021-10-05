@@ -17,8 +17,8 @@ var transporter = nodemailer.createTransport({
 
 
 var mail = {
-    from: "luitelsgr@gmail.com",
-    to: "luitelsg@gmail.com",
+    from: "process.env.CLIENT_EMAIL",   //Sender email address
+    to: "process.env.CLIENT_EMAIL", //receiver email address
     subject: "Registration successful",
     text: "You successfully registered an account at www.mydomain.com",
     html: "<p>You successfully registered an account at www.mydomain.com</p>"
